@@ -15,13 +15,8 @@
 <title>Insure Motivation</title>
 
 <script> 
-	function load_home(pageno){
-			if(pageno==1){
-				$('#content').load('motivational-quotes-1.html');
-			}
-			if(pageno=='fq'){
-				$('#content').load('famous-quotes.html');
-			}
+	function load_home(){
+			$('#content').load('motivational-quotes-1.html');
 		}
 </script>
 <script>
