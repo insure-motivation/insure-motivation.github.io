@@ -15,13 +15,21 @@
 <title>Insure Motivation</title>
 
 <script> 
-	function load_home(){
-			$('#content').load('motivational-quotes-1.html');
+	function load_home(pageno){
+			if(pageno==1){
+				$('#content').load('motivational-quotes-1.html');
+			}
+			if(pageno=='fq'){
+				$('#content').load('famous-quotes.html');
+				$('#one').hide();
+				$('#two').show();
+			}
 		}
 </script>
 <script>
 $(function(){
 		$('#content').load('motivational-quotes-1.html');
+		$('#two').hide();
 	});
 </script>
 
@@ -40,8 +48,8 @@ $(function(){
         </div>
         
         <div class="gridbox gridmenu">
-            <div class="mymenuitem" onclick="load_home(1)">Motivational Quotes</div>
-            <div class="mymenuitem" onclick="load_home('fq')">Famous Quotes</div>
+            <div class="mymenuitem" onclick="load_home(1)">Motivational Quotes <span id="one"><img src="./src/static/img/Actions-go-next-icon.png"/></span></div>
+            <div class="mymenuitem" onclick="load_home('fq')">Famous Quotes <span id="two"><img src="./src/static/img/Actions-go-next-icon.png"/></span></div>
         </div>
         
         <div class="gridbox gridmain">
@@ -64,7 +72,7 @@ $(function(){
 
 		<div class="gridbox gridfooter">
 			<div class="footer">
-				<p>This Website is Developed & maintained by By Tara Chand Kumawat</p>
+				<p>This Website is Developed & Maintained By Tara Chand Kumawat</p>
 			</div>
 		</div>
     </div>
