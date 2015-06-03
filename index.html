@@ -31,7 +31,9 @@
 <script>
 $(function(){
 		$('#content').load('motivational-quotes-1.html');
-		$("#website-logo").attr("src", "./src/static/img/insure-motivation-logo.ico");
+		$('#website-logo').attr("src", "./src/static/img/insure-motivation-logo.ico");
+		$('#one').attr("src","./src/static/img/Actions-go-next-icon.png");
+		$('#two').attr("src","./src/static/img/Actions-go-next-icon.png");
 		$('#two').hide();
 	});
 </script>
@@ -51,8 +53,8 @@ $(function(){
         </div>
         
         <div class="gridbox gridmenu">
-            <div class="mymenuitem" onclick="load_home(1)">Motivational Quotes <span id="one"><img src="./src/static/img/Actions-go-next-icon.png"/></span></div>
-            <div class="mymenuitem" onclick="load_home('fq')">Famous Quotes <span id="two"><img src="./src/static/img/Actions-go-next-icon.png"/></span></div>
+            <div class="mymenuitem" onclick="load_home(1)">Motivational Quotes <span><img id="one"/></span></div>
+            <div class="mymenuitem" onclick="load_home('fq')">Famous Quotes <span><img id="two"/></span></div>
         </div>
         
         <div class="gridbox gridmain">
